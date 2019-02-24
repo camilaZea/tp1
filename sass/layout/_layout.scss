@@ -84,10 +84,7 @@ body {
     grid-area: footer;
 }
   
-
-
 .wrapperGeneral {
-  //  background-color:#ffc9b7;
     color: #444;
     margin-left: auto;
     margin-right: auto;
@@ -101,47 +98,38 @@ body {
     "footer"
 }
 
-
-
 .box {
-  //  background-color: #444;
     color: white;
     border-radius: 5px;
     padding: 10px;
     font-size: 1.2em; 
-    
-  }
+}
 
-  .box1 {
-    //background-color: #444;
+.box1 {
     color: white;
     border-radius: 5px;
     padding: 10px;
     font-size: 150%; 
     margin: 0 auto;
-  }
-
-  
-  .header,
-  .footer {
-    //background-color:#ffc9b7;
-    color: white;
-    text-align: center;
-    
-  }
-
-  footer {
-    text-align: center;
-    padding: 1%;
-    //background-color: #ffc9b7;
 }
   
-  .sidebar2 {
-    //background-color:#444444;
+.header,
+.footer {
     color: white;
-  }
+    text-align: center;
 
-  .iden{
+}
+
+footer {
+    text-align: center;
+    padding: 1%;
+}
+
+.sidebar2 {
+    color: white;
+}
+
+.iden { 
     width: 100%;
     padding: 3px 5px;
     margin: 8px 0;
@@ -150,19 +138,17 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     color: black;
-  }
+}
 
-  .cacherElement{
-
+.cacherElement {
     display: none;
-  }
+}
 
-  .afficherElement{
-
+.afficherElement {
     display: none;
-  }
+}
 
-  #commande{
+#commande {
     width: 25%;
     padding: 3px 5px;
     margin: 8px 0;
@@ -172,9 +158,9 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: black;
-  }
-  .bout{
-        
+}
+
+.bout {
     padding: 1px 9px;
     margin: 8px 0;
     display: inline-block;
@@ -182,17 +168,17 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     color: black;
-  }
+}
 
-
-  .nbrbillets{ width: 15%;
+.nbrbillets { 
+    width: 15%;
     padding: 3px 5px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: black;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
 }
 
 .deuxieme{
