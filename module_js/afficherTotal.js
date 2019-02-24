@@ -1,9 +1,7 @@
 
 export class AfficherTotal{
-    
 
     constructor( titrePiece, prenom, nom, rue, ville, codePostale, total) {
-        
         
         this.titrePiece = titrePiece;
         this.prenom = prenom;
@@ -18,29 +16,23 @@ export class AfficherTotal{
         this.afficherAdress();
         this.afficherTotalPayer();
        
-
         document.getElementById("revenirAcceul").addEventListener("click", this.revenirAcceuil.bind(this) );
                       
-        
     }
 
   
 
     cacherForm(){
 
-         let elementForm = document.getElementsByClassName("form");
+        let elementForm = document.getElementsByClassName("form");
 
-         document.getElementById("infoCompletes").classList.remove('CinfoCompletes');
-         document.getElementById("formulaire").classList.add('uneColonne');
-         
+        document.getElementById("infoCompletes").classList.remove('CinfoCompletes');
+        document.getElementById("formulaire").classList.add('uneColonne');
 
-         for (let i = 0; i < elementForm.length; i++) {
+        for (let i = 0; i < elementForm.length; i++) {
 
-           elementForm[i].classList.add('cacherElement');
-         }
-
-
-
+        elementForm[i].classList.add('cacherElement');
+        }
     }
 
  
