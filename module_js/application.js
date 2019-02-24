@@ -1,6 +1,6 @@
-import {AfficherTotal} from './afficherTotal.js'
+import {AfficherTotal} from './AfficherTotal.js'
 import {AnimLettre} from './AnimLettre.js'
-import {AnimAccueil} from './animAccueil.js'
+import {AnimAccueil} from './AnimAccueil.js'
 
 let titrePiece;
 let titreAcceuil = 'Théâtre de Walt Disney';
