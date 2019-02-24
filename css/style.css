@@ -913,6 +913,7 @@ a:hover, a:active {
 .rubberBand {
   -webkit-animation: rubberBand 1s alternate 0s 3;
           animation: rubberBand 1s alternate 0s 3;
+  font-size: 60px;
 }
 
 @-webkit-keyframes rubberBand {
