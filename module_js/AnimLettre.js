@@ -21,29 +21,23 @@ export class AnimLettre {
         this.animerLettre(this.lesLettres)
     }
 
-
-animerLettre(lesLettres) {
-     console.log('lettre = ' +lesLettres)
-    let elmConteneur = this.creerElement(this.elmParent,
-        'section',
-        '',
-        'mot')
-    let i = 0 
-    for (let uneLettre of lesLettres)
-    {
-        let elmlettre = this.creerElement(elmConteneur,
-            'div',
-            uneLettre,
-            '')
-        elmlettre.style.animationDelay = (i * 0.2) + "s";
-        elmlettre.style.color = this.tabCouleur[(i++) % 6]
+    animerLettre(lesLettres) {
+        console.log('lettre = ' +lesLettres)
+        let elmConteneur = this.creerElement(this.elmParent,
+            'section',
+            '',
+            'mot')
+        let i = 0 
+        for (let uneLettre of lesLettres)
+        {
+            let elmlettre = this.creerElement(elmConteneur,
+                'div',
+                uneLettre,
+                '')
+            elmlettre.style.animationDelay = (i * 0.2) + "s";
+            elmlettre.style.color = this.tabCouleur[(i++) % 6]
+        }
     }
-
-
-
-}
-
-
 
     creerElement(elmParent, balise, contenu, classCSS) {
         console.log('creerElement' + balise)

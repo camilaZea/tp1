@@ -8,11 +8,10 @@ export class AnimAccueil {
      * @param {String} chaine - contient les lettres
      * @param {DOMElement} elementParent - Conteneur de l'animation
      * @param {function} fonction - l'adresse de la fonction à exécuter après l'animation
-         
-     }}
      */
 
     constructor(lesLettres, elmParent, fonction) {
+
         this.tabCouleur = ['#CC231E', '#235E6F', '#009900', '#34A65F', '#0F8A5F', '#F5624D'];
         this.lesLettres = lesLettres
         this.elmParent = elmParent;
@@ -23,7 +22,7 @@ export class AnimAccueil {
 
 
     animerLettre(lesLettres) {
-        console.log('lettre = ' +lesLettres)
+
        let elmConteneur = this.creerElement(this.elmParent,
            'section',
            '',
@@ -32,12 +31,8 @@ export class AnimAccueil {
         let elmlettre = this.creerElement(elmConteneur,
             'div',
             this.lesLettres,
-            '')
-
-            //elmlettre.style.animationDelay = 5 + "s";
+            '');
    }
-
-
 
     creerElement(elmParent, balise, contenu, classCSS) {
         console.log('creerElement' + balise)
@@ -51,7 +46,6 @@ export class AnimAccueil {
         elmParent.appendChild(noeud)
         return noeud
     }
-
 }    
 
 
