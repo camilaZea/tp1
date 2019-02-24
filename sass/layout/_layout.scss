@@ -1,6 +1,4 @@
 body {
-    
-    //font-family: "quicksand", cursive, sans-serif;
     display: flex;
     flex-direction: column;
     max-width: 100vw;
@@ -10,14 +8,9 @@ body {
 .global {
     max-width: 100vw;
     flex: 1 0 100%;
-    /*Conteneur flex en rangée*/
     display: flex;
-    /*Poussée vers la gauche pour ne pas voir le menu*/
     transform: translateX(-100%);
-    /*Effet de transition sur la transformation*/
-    transition: transform 1s;
-    /*	overflow-x: hidden; */
-    
+    transition: transform 1s;  
 } 
    
 .contenu {
