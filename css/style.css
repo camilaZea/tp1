@@ -855,15 +855,28 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 19%;
   margin: 0 auto;
 }
 
 .mot > div {
-  font-size: 5vw;
+  font-size: 8vw;
   text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
   -webkit-animation: animationLettre .5s both;
           animation: animationLettre .5s both;
+}
+
+@media only screen and (min-width: 600px) {
+  .mot > div {
+    font-size: 5vw;
+  }
+  .mot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 
 @-webkit-keyframes animationLettre {
