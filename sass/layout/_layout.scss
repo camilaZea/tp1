@@ -181,22 +181,22 @@ footer {
     color: black;
 }
 
-.deuxieme{
+.deuxieme {
     float: left;
     width: 42%;
     margin-top: 6px; 
 }
 
-#fraiss{
+#fraiss {
     width: 63%;
   
 }
 
-.erreur{
+.erreur {
     color: red;
 }
 
-.enLigne{
+.enLigne {
     display: flex
 }
 
@@ -204,37 +204,24 @@ footer {
      margin-right: 10px;
 }
 
-.nomPiece{
+.nomPiece { 
     text-align: center;
 }
 
-.CinfoCompletes{
+.CinfoCompletes {
     display: none;
 }
 
-.img{
+.img {
     cursor: pointer;
     width: 298px;
     height: 400px;
     object-fit: cover;
 }
 
-.col{
-    grid-gap: 20px;
-    -ms-grid-columns: 1fr 1fr;
-    /* grid-template-columns: 0; */
-    grid-template-areas: "header header header"
- "sidebar content sidebar2"
- "footer footer footer";
-    padding: 50px;
-}
-
-
-
 @media screen and (min-width: 768px) {
     html {
         font-size: 1em;
-        //background-color:#ffc9b7;
     } 
         
     .boutonBurger {
@@ -242,34 +229,27 @@ footer {
     }
              
     .global {
-        /*Placer à sa potition d'origine*/
-        transform: translateX(0%);
-        /*Mettre le contenu en colonne*/				
+        transform: translateX(0%);				
         flex-direction: column;
-       
     }
 
     .menu {
-        /*Propriété comme item flex - ne peut s'étirer en hauteur*/
         flex: 0 0 100%;
-        
-        /*Affichage du menu en rangée*/
         flex-direction: row;
         justify-content: space-between;
     }
+
     .menu a {
-        
+
         border : 1px solid #9c8f8e;;
-        /*Propriété comme item flex - peut s'étirer en largeur*/
         flex: 1 0 auto;
         color: #9c8f8e;
     }
 
     #fraiss{
+
         width: 66%;
-      
     }
- 
 }
   
 @media only screen and (min-width: 500px)  {
