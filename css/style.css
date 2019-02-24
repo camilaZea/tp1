@@ -531,6 +531,9 @@ footer {
             flex: 1 0 auto;
     color: #9c8f8e;
   }
+  #fraiss {
+    width: 66%;
+  }
 }
 
 @media only screen and (min-width: 500px) {
@@ -859,7 +862,7 @@ a:hover, a:active {
 }
 
 .mot > div {
-  font-size: 19vw;
+  font-size: 12vw;
   text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
   -webkit-animation: animationLettre .5s both;
           animation: animationLettre .5s both;
