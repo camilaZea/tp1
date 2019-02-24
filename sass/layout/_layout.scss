@@ -253,8 +253,8 @@ footer {
 }
   
 @media only screen and (min-width: 500px)  {
-    .wrapperGeneral {
 
+    .wrapperGeneral {
         grid-template-columns: 20% auto;
         grid-template-areas:
         "header   header"
@@ -266,17 +266,15 @@ footer {
   
 @media only screen and (min-width: 600px)   {
   
-
     .wrapper2 {
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr ;
-       /* grid-template-areas:
+        grid-template-areas:
         "header  header  header"
         "sidebar content sidebar2"
-        "footer  footer  footer";*/
+        "footer  footer  footer";
         padding: 50px;
     }
-
 
     .wrapper1 {
         grid-gap: 20px;
@@ -285,11 +283,9 @@ footer {
         "header  header  header"
         "sidebar content sidebar2"
         "footer  footer  footer";
-        
     }
 
-    .uneColonne{
-
+    .uneColonne {
         grid-template-columns: 1fr!important;
         width: 50%;
         margin: 0 auto;

@@ -534,10 +534,7 @@ footer {
     grid-gap: 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    /* grid-template-areas:
-        "header  header  header"
-        "sidebar content sidebar2"
-        "footer  footer  footer";*/
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
     padding: 50px;
   }
   .wrapper1 {
