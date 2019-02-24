@@ -41,17 +41,10 @@ elmImg.forEach(function(elem) {
 		document.getElementById("contenuAcceuil").classList.add('cacherElement');
 
 		titrePiece = this.id;
-		
+
 		let  monAnimLettre = new AnimLettre(titrePiece, elmHeader, finAnim);
     });
 });
-
-function finAnim() {
-	console.log('animation terminée')
-}
-
-
-
 
 //////////////////// functions - et + pour adultes ///////////////////////////////////////////////////////////////
 function moinsAdultes()
@@ -92,8 +85,10 @@ function moinsEnfants() {
 
 function plusEnfants() {
 
-	var plus=window.parseFloat(document.getElementById("enfants").value)
+	var plus=window.parseFloat(document.getElementById("enfants").value);
+
 	window.parseFloat(document.getElementById("enfants").value=++plus);
+
 	document.getElementById("commande").value=window.parseInt(document.getElementById("adultes").value)*20+(window.parseFloat(document.getElementById("enfants").value)*7.50)+"$"
 };
 
@@ -105,7 +100,6 @@ function courrier() {
 	}
 
 	else{
-
 		document.getElementById("commande").value=window.parseFloat(document.getElementById("commande").value)-5+"$"
 	}
 };
@@ -125,38 +119,32 @@ function confirmerTotal() {
 
 	/* les erreurs */
 
-	if (document.getElementById("prenom").value=="")
-	{
+	if (document.getElementById("prenom").value=="") {
 		valid=false
 		document.getElementById("erreurprenom").innerHTML=" *! Prénom absent";
 	};
 
-	if (document.getElementById("nom").value=="")
-	{
+	if (document.getElementById("nom").value=="") {
 		valid=false
 		document.getElementById("erreurnom").innerHTML=" *! Nom absent";
 	}; 
 
-	if (document.getElementById("rue").value=="")
-	{
+	if (document.getElementById("rue").value=="") {
 		valid=false
 		document.getElementById("erreurrue").innerHTML=" *! Rue absente";
 	};
 
-	if (document.getElementById("ville").value=="")
-	{
+	if (document.getElementById("ville").value=="") {
 		valid=false
 		document.getElementById("erreurville").innerHTML=" *! Ville absente";
 	};
 
-	if (document.getElementById("codePostale").value=="")
-	{
+	if (document.getElementById("codePostale").value=="") {
 		valid=false 
 		document.getElementById("erreurCode").innerHTML=" *! Code postale absent";
 	};
 	
-	if (document.getElementById("adultes").value==0)
-	{
+	if (document.getElementById("adultes").value==0) {
 		valid=false
 		document.getElementById("erreurnmbr").innerHTML=" *! Vous devez commander au moins 1 billet";
 	};
@@ -164,42 +152,36 @@ function confirmerTotal() {
 	
 		/*case a choche*/
 
-	if (document.getElementById("payment").checked&&valid==true) 
-	{
+	if (document.getElementById("payment").checked&&valid==true)  {
 		//window.alert("Transaction confirmée...une facture vous sera postée")
 	}
-		else if (document.getElementById("courrier").checked&&valid==true) 
-		{
+		else if (document.getElementById("courrier").checked&&valid==true)  {
 			//carte= prompt("Entrez votre numero de carte de credit","");
 			//window.alert("Transaction confirmée...porté à la carte "+carte)
 		}
 		
-		else
-		{   valid=false
+		else {   
+			valid=false
 			document.getElementById("erreurcourrier").innerHTML=" *! Vous devez chocher une case";
 		};   
 
 
-	if (valid==true)
-	{
+	if (valid==true) {
+
 		prenom = document.getElementById("prenom").value;
 		nom = document.getElementById("nom").value;
 		rue = document.getElementById("rue").value;
 		ville = document.getElementById("ville").value;
 		codePostale = document.getElementById("codePostale").value;
 		total = document.getElementById("commande").value;
-		//adul=parseInt(document.getElementById("adultes")).value 
-		//location.reload()
-		;
 
 		let  lePrenom = new AfficherTotal(titrePiece, prenom, nom, rue, ville, codePostale, total);
-
-
-		
-		
-
 	};
 };
+
+function finAnim() {
+	
+}
 
 
 
