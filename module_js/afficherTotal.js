@@ -73,6 +73,7 @@ export class AfficherTotal {
         document.getElementById('iAdresseComplet').appendChild(elmH4);
    }
 
+   ///// function afficher total $$ /////
     afficherTotalPayer() {
 
         let elmH4 = document.createElement('h4');
