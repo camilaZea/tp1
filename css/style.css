@@ -553,6 +553,7 @@ footer {
         "header  header  header"
         "sidebar content sidebar2"
         "footer  footer  footer";*/
+    padding: 50px;
   }
   .wrapper1 {
     grid-gap: 20px;
