@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+        <input type="checkbox" id="chkBoutonBurger" />
+        <label for="chkBoutonBurger" class="boutonBurger"></label>
+
+        <div class="global">
+            <nav class="menu"> 
+                <a href="billets.html">Acceuil</a>
+                <a href="#">menu 2</a>
+                <a href="testGrid.html">test</a>
+                <a href="#">menu 4</a>
+            </nav>
+            <!-- /MENU -->
+
+            <main class="contenu " id="contenuAcceuil">
+                <section>
+                    <article>
+                        <div class="wrapper1 wrapperGeneral" id="formulaire">
+                            <div class="box header" id="headerAcceuil">
+                                
+                            </div>
+                            <div class="box1 sidebar ">
+                                <img src="css/img/bNeige.jpg" alt="cendrillon" id="blanche-neige" class="img">
+                            </div>
+                            <div class="box1 sidebar2 ">
+                                <img src="css/img/brave.jpg" alt="belle" id="Brave" class="img">
+                            </div>
+                            <div class="box1 content">
+                                <img src="css/img/cendrillon.jpg" alt="belle" id="cendrillon" class="img">
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <footer>Camila Zea</footer>
+            </main>
+
+            <main class="contenu " id="contenuBillets">
+                <section>
+                    <article>
+                        <div class="wrapper2 wrapperGeneral" id="formulaire">
+                            <div class="box header" id="header"></div>
+                            <!--gauche-->
+                            <div class="box sidebar">
+                                <form id="identification" class="form" >
+                                    <h3>Identification</h3>
+                                    <!--prenom-->
+                                    <label for="prenom" class="premiere">Prénom :</label>
+                                    <input type="text" id="prenom" class="iden" autofocus required/>
+                                    <label id="erreurprenom" class="erreur"></label><br>
+                                    <!--nom-->
+                                    <label for="nom" class="premiere">Nom :</label>
+                                    <input type="text" id="nom" class="iden" required/>
+                                    <label id="erreurnom" class="erreur"></label><br>
+                                    <!--rue-->
+                                    <label for="rue" class="premiere">Rue :</label>
+                                    <input type="text" id="rue" class="iden" required/>
+                                    <label id="erreurrue" class="erreur"></label><br>
+                                    <!--ville-->
+                                    <label for="ville" class="premiere">Ville :</label>
+                                    <input type="text" id="ville" class="iden" required/>
+                                    <label id="erreurville" class="erreur"></label><br>
+                                    <!--code postale-->
+                                    <label for="postale" class="premiere">Code postale:</label>
+                                    <input type="text" id="codePostale" class="iden" required placeholder="ex: A0A 0A0" maxlength="7" />
+                                    <label id="erreurCode" class="erreur"></label><br>
+                                </form>
+                            </div>
+
+                            <!--droite-->
+                            <div class="box content" id="contenuMilieu">
+                                <form id="nbrBillets" class="Billets form" align="left">
+                                    <h3>Nombres de billets</h3>
+                                    <!--Billets adultes-->
+                                    <label for="adultes" class="deuxieme">Adultes :</label>
+                                    <input type="text" id="adultes" class="nbrbillets" value="0" size="2" required readonly />
+                                    <input type="button" id="bttMoinsA" value="-" class="bout" >
+                                    <input type="button" id="bttPlusA" value="+" class="bout" > 
+                                    <label id="erreurnmbr" class="erreur"></label><br>
+                                    <!--Billets enfants-->
+                                    <label for="enfants" class="deuxieme">Enfants 12 ans et moins: </label> 
+                                    <input type="text" id="enfants" class="nbrbillets" value="0" size="2" readonly/> 
+                                    <input type="button" id="bttMoinsE" value="-" class="bout"> <input type="button" id="bttPlusE" value="+" class="bout" >
+                                </form>
+                                <form id="fraiss" align="left" class="Billets form">
+                                    <h3>Frais divers</h3>
+                                    <input type="checkbox" id="courrier" class="frais"/> Courrier recommandé
+                                    <input type="checkbox" id="payment" class="frais"/> Paiment différé 
+                                    <label id="erreurcourrier" class="erreur"></label>
+                                </form>
+                                <br>
+                                <br>
+
+                                <!--frais divers-->
+                                <form id="montant" class="Billets form" align="left">
+                                    Montant de la commande 
+                                    <input type="text" id="commande" name="resulta" class="comandeMont" value="0" readonly size="10" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                </form>
+
+                                <input type="button" id="totalFinal" class="confirmer form" value="Confirmer la commande de billets" >
+
+                                <!--infoCompletes -->
+                                <div id="infoCompletes" class="CinfoCompletes">
+                                    <div class="nomPiece" id="iNomPiece"></div>
+                                    <div class="nomComplet enLigne" id="iNomComplet"></div>
+                                    <div class="adresseComplet enLigne" id="iAdresseComplet"></div>
+                                    <div class="total enLigne" id="iTotal"></div>
+                                    <input type="button" id="revenirAcceul" class="confirmer " value="Revenir à la page d'acceuil " >
+                                </div>
+                            </div>
+                        </div>
+                            <!-- /WRAPPER -->
+
+                    </article>
+                        <!-- /ARTICLE -->
+                </section>
+                    <!-- /WRAPPER -->
+
+                    <footer>
+                        <div class="box footer">
+                            <h6>Camila Zea</h6>
+                        </div>
+                    </footer>
+
+            </main>
+                <!-- /MAIN -->
+
+            </div>
+            <!-- /GLOBAL -->
+
+    </body>
+    <!-- /BODY -->
+
+    <script type="module" src=module_js\application.js></script>
+
+</html>
+<!-- /HTML -->
