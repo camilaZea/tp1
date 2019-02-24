@@ -254,6 +254,15 @@ body {
     object-fit: cover;
 }
 
+.col{
+    grid-gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+    /* grid-template-columns: 0; */
+    grid-template-areas: "header header header"
+ "sidebar content sidebar2"
+ "footer footer footer";
+    padding: 50px;
+}
 
 
 
@@ -320,10 +329,9 @@ body {
         "header  header  header"
         "sidebar content sidebar2"
         "footer  footer  footer";*/
-
         padding: 50px;
-        
     }
+
 
     .wrapper1 {
         grid-gap: 20px;
