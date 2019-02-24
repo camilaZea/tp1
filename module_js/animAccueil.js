@@ -12,7 +12,6 @@ export class AnimAccueil {
 
     constructor(lesLettres, elmParent, fonction) {
 
-        this.tabCouleur = ['#ffffff', '#235E6F', '#009900', '#34A65F', '#0F8A5F', '#F5624D'];
         this.lesLettres = lesLettres
         this.elmParent = elmParent;
         this.fonction = fonction
