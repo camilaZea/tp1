@@ -14,16 +14,12 @@ body {
 } 
    
 .contenu {
-    /*Sa largeur est fixée à 100%*/
     width: 100vw;
-    /*Propriété comme item flex - ne peut rétrécir*/
     flex: 1 0 100%;
-    /*Conteneur flex en colonne pour ses enfants*/
     display: flex;
     flex-flow: column nowrap;
     overflow-x: hidden; overflow-y: auto;
     background-image: linear-gradient(#a08d8d,#92ded7)
-   
 }
 
 .section {
