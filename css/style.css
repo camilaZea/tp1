@@ -549,7 +549,10 @@ footer {
     grid-gap: 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+    /* grid-template-areas:
+        "header  header  header"
+        "sidebar content sidebar2"
+        "footer  footer  footer";*/
   }
   .wrapper1 {
     grid-gap: 20px;
