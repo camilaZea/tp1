@@ -855,12 +855,11 @@ a:hover, a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 19%;
   margin: 0 auto;
 }
 
 .mot > div {
-  font-size: 8vw;
+  font-size: 19vw;
   text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
   -webkit-animation: animationLettre .5s both;
           animation: animationLettre .5s both;
