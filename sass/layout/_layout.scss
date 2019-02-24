@@ -52,11 +52,8 @@ body {
 .menu {
     background-color: white;
     text-align: center;
-   
     width: 100vw;
-   
     flex: 1 0 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +62,6 @@ body {
 
  .menu a {
     text-decoration: none;
-   
     border: 1px solid #9c8f8e;
     font-size: 1.5rem;
     padding: 0.5rem;
