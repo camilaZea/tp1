@@ -65,7 +65,7 @@ body {
     border: 1px solid #9c8f8e;
     font-size: 1.5rem;
     padding: 0.5rem;
-    color:#9c8f8e;
+    color:black;
 }
 
 .sidebar {
@@ -217,6 +217,10 @@ footer {
     width: 298px;
     height: 400px;
     object-fit: cover;
+}
+
+#headerAcceuil{
+    color: black;
 }
 
 @media screen and (min-width: 768px) {
