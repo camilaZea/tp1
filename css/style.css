@@ -268,14 +268,13 @@ body {
 }
 
 .boutonBurger {
-  background: -webkit-gradient(linear, left top, left bottom, from(#444444), color-stop(20%, #ffc9b7), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #444444), color-stop(60%, #ffc9b7), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #444444), to(#ffc9b7));
-  background: linear-gradient(to bottom, #444444 0%, #ffc9b7 20%, transparent 20%, transparent 40%, #444444 40%, #ffc9b7 60%, transparent 60%, transparent 80%, #444444 80%, #ffc9b7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9f8e8e), color-stop(20%, #92cec9), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #a08e8e), color-stop(60%, #92d3cd), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #9f8e8e), to(#92d3cc));
+  background: linear-gradient(to bottom, #9f8e8e 0%, #92cec9 20%, transparent 20%, transparent 40%, #a08e8e 40%, #92d3cd 60%, transparent 60%, transparent 80%, #9f8e8e 80%, #92d3cc 100%);
   height: 48px;
   width: 48px;
   margin: 1%;
   display: inline-block;
   cursor: pointer;
-  /*Effet de transition sur la rotation*/
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
