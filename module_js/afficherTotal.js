@@ -1,5 +1,5 @@
 
-export class AfficherTotal{
+export class AfficherTotal { 
 
     constructor( titrePiece, prenom, nom, rue, ville, codePostale, total) {
         
@@ -21,8 +21,8 @@ export class AfficherTotal{
     }
 
   
-
-    cacherForm(){
+///// function cache le formulaire /////
+    cacherForm() {
 
         let elementForm = document.getElementsByClassName("form");
 
@@ -34,28 +34,27 @@ export class AfficherTotal{
         elementForm[i].classList.add('cacherElement');
         }
     }
+    
+    ///// function afficher le nom /////
+    afficherNom() {
 
- 
+        let elmH4 = document.createElement('h4');
+        let elmH3 = document.createElement('h3');
 
-    
-        afficherNom() {
+        let texteContenu = this.prenom + " " + this.nom;
+        let titreTextContenu =  " Nom Complet : " 
 
-            let elmH4 = document.createElement('h4');
-            let elmH3 = document.createElement('h3');
-    
-            let texteContenu = this.prenom + " " + this.nom;
-            let titreTextContenu =  " Nom Complet : " 
-    
-            let texte = document.createTextNode(texteContenu);
-            let titreTexte = document.createTextNode(titreTextContenu);
-    
-            elmH4.appendChild(texte);
-            elmH3.appendChild(titreTexte);
-    
-            document.getElementById('iNomComplet').appendChild(elmH3);
-            document.getElementById('iNomComplet').appendChild(elmH4);
+        let texte = document.createTextNode(texteContenu);
+        let titreTexte = document.createTextNode(titreTextContenu);
+
+        elmH4.appendChild(texte);
+        elmH3.appendChild(titreTexte);
+
+        document.getElementById('iNomComplet').appendChild(elmH3);
+        document.getElementById('iNomComplet').appendChild(elmH4);
     }
 
+    ///// function afficher l'adresse /////
     afficherAdress() {
 
         let elmH4 = document.createElement('h4');
