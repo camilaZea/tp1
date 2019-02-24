@@ -12,34 +12,7 @@ document.getElementById("contenuBillets").classList.add('cacherElement');
 
 let  monAnimLettre = new AnimAccueil(titreAcceuil, elmHeaderAcceuil, finAnim);
 
-var elementsArray = document.querySelectorAll('img');
-
-elementsArray.forEach(function(elem) {
-    elem.addEventListener("click", function() {
-		document.getElementById("contenuBillets").classList.remove('cacherElement');
-		document.getElementById("contenuAcceuil").classList.add('cacherElement');
-		titrePiece = this.id;
-		
-	
-			/*let titre = document.createElement('h1');
-			let t = document.createTextNode(this.id);
-			titre.appendChild(t);
-			document.getElementById('header').appendChild(titre);*/
-
-			let  monAnimLettre = new AnimLettre(titrePiece, elmHeader, finAnim);
-
-			
-    });
-});
-
-function finAnim() {
-	console.log('animation terminée')
-}
-
-
-
-
-
+var elmImg = document.querySelectorAll('img');
 
 //////////////////// écouteurs + et - pour adultes ///////////////////////////////////////////////////////////////
 
@@ -59,8 +32,23 @@ document.getElementById("courrier").addEventListener("click", courrier);
 
 document.getElementById("totalFinal").addEventListener("click", confirmerTotal);
 
-//////////////////// écouteur pour cendrillon //////////////////////////////////////////////////
+//////////////////// écouteur pour cendrillon en fonction //////////////////////////////////////////////////
+elmImg.forEach(function(elem) {
 
+    elem.addEventListener("click", function() {
+
+		document.getElementById("contenuBillets").classList.remove('cacherElement');
+		document.getElementById("contenuAcceuil").classList.add('cacherElement');
+
+		titrePiece = this.id;
+		
+		let  monAnimLettre = new AnimLettre(titrePiece, elmHeader, finAnim);
+    });
+});
+
+function finAnim() {
+	console.log('animation terminée')
+}
 
 
 
