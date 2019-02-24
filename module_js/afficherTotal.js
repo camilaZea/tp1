@@ -16,7 +16,7 @@ export class AfficherTotal {
         this.afficherAdress();
         this.afficherTotalPayer();
        
-        document.getElementById("revenirAcceul").addEventListener("click", this.revenirAcceuil.bind(this) );
+        document.getElementById("revenirAcceul").addEventListener("click", this.revenirAccueil.bind(this) );
                       
     }
 
@@ -92,10 +92,9 @@ export class AfficherTotal {
         document.getElementById('iTotal').appendChild(elmH4);
     }
     
-    revenirAcceuil(){
+    ///// function pour revenir à l'accueil /////
+    revenirAccueil() {
 
         window.open('./billets.html', '_self');
-
     }
-
 }
