@@ -17,7 +17,7 @@ export class AnimAccueil {
         this.lesLettres = lesLettres
         this.elmParent = elmParent;
         this.fonction = fonction
-        console.log('debut')
+        console.log('debut') 
         this.animerLettre(this.lesLettres)
     }
 
